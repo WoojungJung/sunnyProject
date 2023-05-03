@@ -19,8 +19,11 @@
 	</select>
 
 	<select id="getTotal" resultType="_int">
-		select count(user_number) from
-		tbl_user
+		select count(user_number) from tbl_user
+	</select>
+	
+	<select id="getTotal2" resultType="_int">
+		select count(gosu_number) from tbl_gosu
 	</select>
 	
 	<!-- userManage page -->
@@ -34,6 +37,7 @@
 			AND u.user_nickname like concat('%',#{searchWord},'%')
 		</if>
 		order by u.user_number desc
+		limit #{startRow}, #{rowCount}
 	</select>
 	
 	<!-- userDetail page -->
@@ -88,6 +92,7 @@
 			AND u.user_nickname like concat('%',#{searchWord},'%')
 		</if>
 		group by g.gosu_number
+		limit #{startRow}, #{rowCount}
 	</select>
 
 	<!-- gosuDetail page -->

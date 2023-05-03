@@ -109,6 +109,34 @@
 					</tbody>
 				</table>
 			</div>
+			<div class="pagination">
+				<ul>
+					<c:if test="${prev}">
+						<li><a
+							href="${pageContext.request.contextPath}/admin/userManage.ad?page=${startPage -1}"
+							class="prev">&lt;</a></li>
+					</c:if>
+					<c:forEach var="i" begin="${startPage}" end="${endPage}">
+						<c:choose>
+							<c:when test="${!(i==page)}">
+								<li><a
+									href="${pageContext.request.contextPath}/admin/userManage.ad?page=${i}">
+										<c:out value="${i}" />
+								</a></li>
+							</c:when>
+							<c:otherwise>
+								<li><a href="#" class="active"> <c:out value="${i}" />
+								</a></li>
+							</c:otherwise>
+						</c:choose>
+					</c:forEach>
+					<c:if test="${next}">
+						<li><a
+							href="${pageContext.request.contextPath}/admin/userManage.ad?page=${endPage +1}"
+							class="next">&gt;</a></li>
+					</c:if>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<jsp:include

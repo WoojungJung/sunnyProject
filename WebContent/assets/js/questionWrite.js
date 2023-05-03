@@ -114,7 +114,7 @@ $uploadBox.on('click', function () {
 
 // 취소버튼 고수페이지로 이동처리 해야함.
 $(".cancel-btn").on("click", () => {
-  window.location.href = "#";
+  window.location.href = "/question/questionListOk.qs?gosuNumber=" + gosuNumber;
 });
 
 

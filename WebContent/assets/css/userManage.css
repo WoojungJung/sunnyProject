@@ -326,3 +326,35 @@ td {
 .search.active .btn {
   transform: translateX(198px);
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pagination > ul {
+  display: flex;
+  list-style: none;
+}
+
+.pagination a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #02bf4e;
+  color: #fff;
+}
+
+.pagination .active {
+  background-color: #009a3e;
+  color: #fff;
+}

@@ -285,6 +285,8 @@ opacity: 0;
 }
 
 #input-one,
+#input-two,
+#input-three,
 #file-input{
   display: none;
 }

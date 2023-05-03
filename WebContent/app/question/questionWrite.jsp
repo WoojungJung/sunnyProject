@@ -73,5 +73,8 @@
     </div>
     <jsp:include page="${pageContext.request.contextPath}/app/admin/footer.jsp" />
     <script src="../../assets/js/questionWrite.js"></script>
+    	<script>
+		let gosuNumber = "${gosuNumber}";
+	</script>
   </body>
 </html>

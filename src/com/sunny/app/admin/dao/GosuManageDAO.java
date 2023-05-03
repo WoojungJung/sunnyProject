@@ -20,4 +20,8 @@ public class GosuManageDAO {
 		System.out.println("gosuInfo메서드");
 		return sqlSession.selectList("admin.gosuInfo", pageMap);
 	}
+	
+	public int getTotal() {
+		return sqlSession.selectOne("admin.getTotal2");
+	}
 }
