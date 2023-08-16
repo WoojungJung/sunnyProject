@@ -32,9 +32,12 @@
 - **Database** : MySQL
 - **ORM** : Mybatis
 
+### 🧾볕들무렵 포트폴리오(PDF)
+[4팀_볕들무렵.pdf](https://github.com/WoojungJung/sunnyProject/files/12358915/4._.pdf)
+
 
 ## 📌 주요 기능
-### 메인 페이지
+### 메인 페이지 
 - 스토리 게시물 최신순으로 6개 노출
 - 등록된 질문이 가장 많은 식고수 1명의 프로필 노출
 - 반려식물 찾기 테스트 배너
@@ -45,10 +48,17 @@
 - 비밀번호 정규 표현식 텍스트 입력
 - 비밀번호 찾기 질문과 답변으로 확인 후 재설정
 
-
 ### 마이 페이지
-- 주소 API 연동
 - 회원정보 변경
+- 프로필 사진과 한 줄 소개 글 비동기 수정, 저장
+- 내가 작성한 스토리 리스트 조회
+- 게시물 수, 팔로워, 팔로잉 수 조회
+- 식고수인 경우 식고수에게 온 질문 리스트 비동기 조회
+
+### 팔로잉,팔로워
+- 선택한 회원의 팔로잉/팔로워 페이지 조회
+- 로그인 한 사용자에 따라 팔로잉,팔로워 리스트 다르게 표기
+- 팔로잉, 팔로잉 취소 비동기 처리
 
 ### 스토리 
 - 스토리 작성
@@ -57,7 +67,7 @@
 - 수정, 삭제 가능
 
 ### 식고수에게 질문하기 
-- 식고수 리스트(검색기능)
+- 식고수 리스트(검색기능) 
 - SummerNote사용
 - 파일 첨부 가능
 
@@ -72,9 +82,21 @@
 - 식고수회원관리(검색기능)
 - 식고수 신청 관리
 
-##  흐름도
-![흐름도](./image/flowMap.png)
+## 주요 서비스 화면
+- 메인 페이지
+![메인](https://github.com/WoojungJung/sunnyProject/assets/126428419/1aaa51ac-d964-4a2e-aac8-70ff485ffddc)
 
-## ERD
-![ERD](./image/ERD.png)
+- 식고수 리스트
+![식고수리스트](https://github.com/WoojungJung/sunnyProject/assets/126428419/e6e1a384-20d0-4ed4-bb05-68fe14b7e991)
 
+- 스토리 작성
+![스토리글쓰기](https://github.com/WoojungJung/sunnyProject/assets/126428419/9cd677ac-2b71-444d-b70f-5e407e9b3e6f)
+
+- 스토리 조회
+![스토리읽기전체](https://github.com/WoojungJung/sunnyProject/assets/126428419/6d64817a-ea72-4dfd-8379-20f4da543228)
+
+- 마이페이지
+![마이페이지](https://github.com/WoojungJung/sunnyProject/assets/126428419/4630f8c4-45de-4239-ba8e-bba6db1899bd)
+
+- 팔로잉/팔로워
+![팔로워](https://github.com/WoojungJung/sunnyProject/assets/126428419/a92bb44f-1d24-4ad0-a707-cd1b6511c23e)
